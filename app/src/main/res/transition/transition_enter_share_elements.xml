@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android">
+    <targets>
+        <target android:excludeId="@android:id/statusBarBackground"></target>
+    </targets>
+
+    <fade android:duration="2000">
+        <targets>
+            <target android:excludeId="@id/app_bar_detalle"></target>
+        </targets>
+    </fade>
+
+        <fade
+            android:fadingMode="fade_in"
+            android:startDelay="1500"
+            android:duration="400">
+
+            <targets>
+                <target  android:targetId="@id/app_bar_detalle"></target>
+            </targets>
+
+        </fade>
+
+        <fade
+            android:fadingMode="fade_out"
+            android:duration="400">
+            <targets>
+                <target  android:targetId="@id/app_bar_detalle"></target>
+            </targets>
+        </fade>
+
+</transitionSet>
